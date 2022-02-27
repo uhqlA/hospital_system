@@ -10,7 +10,6 @@ import Nav from "@material-tailwind/react/Nav";
 import NavLink from "@material-tailwind/react/NavLink";
 import Dropdown from "@material-tailwind/react/Dropdown";
 import DropdownItem from "@material-tailwind/react/DropdownItem";
-//import Icon from '@material-tailwind/react/Icon';
 import Button from "@material-tailwind/react/Button";
 
 export default function DNavbar() {
@@ -32,13 +31,13 @@ export default function DNavbar() {
         <NavbarCollapse open={openNavbar}>
           <Nav>
             <div className="flex flex-col z-50 lg:flex-row lg:items-center">
-              <NavLink href="/" rel="noreferrer" ripple="light">
+              <NavLink to ="/" rel="noreferrer" ripple="light">
                 &nbsp;Doctors Portal
               </NavLink>
-              <NavLink href="/" rel="noreferrer" ripple="light">
+              <NavLink to="/" rel="noreferrer" ripple="light">
                 &nbsp;Staff Portal
               </NavLink>
-              <NavLink href="/AdminLogin" rel="noreferrer" ripple="light">
+              <NavLink to="/AdminLogin" rel="noreferrer" ripple="light">
                 &nbsp;Admin Portal
               </NavLink>
 
@@ -54,7 +53,7 @@ export default function DNavbar() {
                   }
                   ripple="blue"
                 >
-                  <Link to="/">
+                  <Link to="/login">
                     <DropdownItem color="lightBlue">
                       Outpatient Services
                     </DropdownItem>
